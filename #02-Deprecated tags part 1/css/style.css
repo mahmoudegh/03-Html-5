@@ -1,0 +1,14 @@
+/* 4-<big></big>====><span></span>+css */
+span.font-size{font-size: 19px}
+
+/* 5-<center></center>====>css{text-align:center} */
+p.center{text-align: center;display: block} 
+
+/* 7-<font color="red" face="Tahoma"></font>====>css */
+p.font{color: red; font-family: Tahoma}
+
+
+
+/*My Framework*/
+p{display: inline}
+iframe{display: block}

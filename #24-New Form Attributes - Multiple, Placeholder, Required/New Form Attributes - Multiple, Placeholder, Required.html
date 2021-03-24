@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>New Form Attributes [Multiple, Placeholder, Required]</title>
+			<link rel="stylesheet" href="css/style.css">
+			<script src="js/script.js"></script>
+			<!--[if lt IE 9]>
+				<script src="html5shiv.min.js"></script>
+			<![endif]-->
+		</head>
+		<body>
+			<!-- Start Header -->
+			<header class="main">Html5 Course</header>
+			<!-- End Header -->
+
+
+			<!-- Start Navigation -->
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Services</li>
+					<li>Contac Us</li>
+				</ul>
+			</nav>
+			<!-- End Navigation -->
+
+
+			<!-- Start Main Content -->
+			<main>
+			<!-- Use Mark To Highlight A word And Use Css To style It -->
+				<p>Welcome To Our <span><mark>Html5</mark> Course</span> From Elzero Web School</p>
+			</main>
+			<!-- End Main Content -->
+
+
+			<!-- Start Articles -->
+			<div class="post"><!-- we still can use <div> in Html5 -->
+				<article>
+					<header>
+						<h3>Our New Framework Milestone</h3>
+						<p>
+							Created By 
+							<span>Mahmoud</span> 
+							On 
+			<!-- Start Time -->
+							<time datetime="2019-01-06 11:35:40">Jan, 6th, 2019</time>
+			<!-- End Time -->
+						</p>
+					</header>
+
+			<!-- Start Progress -->
+					<section>
+						<p>This Is Article Content Number #01</p>					
+						<div>
+							Design : <progress value="7" max="10"></progress><br>
+							Coding : <progress value="65" max="100"></progress>
+						</div>
+					</section>
+			<!-- End Progress -->
+				</article>
+
+				<article>
+					<header>
+						<h3>Article About &lt;details&gt;</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>This Is Article Content Number #02</p>
+			<!-- Start Of Detailes -->
+						<p>
+							<!-- #I Can Use Open To Make The Details Opened 
+								 By Defaulet-->
+							<details>
+								<!-- I Can Use Summary To Change Name Of Detailes -->
+								<summary>References</summary>
+								<ul>
+									<li><a href="#">Ref 1</a></li>
+									<li>Ref 2</li>
+									<li>Ref 3</li>
+								</ul>
+							</details>
+						</p>
+			<!-- End Of Detailes -->
+					</section>
+				</article>
+
+				<article>
+					<header>
+						<h3>Article About Using &lt;wbr&gt;</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>This Is Article Content Number #03</p>
+			<!-- Start <wbr> -->
+						<div class="long-link">https://www.testinglonglink.com<wbr>/prouducts.php?id=200<wbr>&cat=100&test=mainsection</div>
+						<!-- Difference bteween <wbr> & <br>:
+			                 <br>==> start new line even after the first word.
+			                 <wbr>==> start new line only if the 
+			                 width of the container(as <div>) is 
+			                 smaller than the width of link -->
+			<!-- End <wbr> -->
+					</section>
+				</article>
+
+				<article>
+					<header>
+						<h3>Article About Using &lt;code&gt;inside&lt;figure&gt;</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>This Code Describe The Div Syntax</p>
+			<!-- Start Of Figure 1 -->
+						<figure>
+							<!-- The tag provides a container for content that is equivalent to 
+								 a figure or diagram in a book. It can be used to group a caption with 
+								 one or more images, a block of code or other content.
+								 In other words, enables us to work more freely, realistically with images,
+							 	 diagrams by enabling to group them & caption one or images with a single caption.
+                            	 Source: http://www.html-5.com/tags/figure-tag/index.html -->
+							<figcaption>This Div Syntax 1-3</figcaption>
+			<!-- Start Of Code -->
+							<code>
+								&lt;div&gt;This Is Normal Syntax For Div&lt;/div&gt;
+							</code>
+			<!-- End Of Code -->
+	                    </figure>
+	        <!-- End Of Figure 1 -->
+					</section>
+				</article>
+
+				<article>
+					<header>
+						<h3>Article About Using &lt;img&gt;inside&lt;figure&gt;</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>This Code Describe The Image Inside Figure</p>
+			<!-- Start Dialog -->
+						<!-- #Must use open to appear
+							 #Used instead of pop up in js
+							 #Styled by css as <div>-->
+						<dialog>This Is Dialog From Html5</dialog>
+			<!-- End Dialog -->
+			<!-- Start Of Figure 2 -->
+						<figure class="img-figure">
+							<img src="images/volcano.jpg" alt="volcano" title="volcano" height="250" width="300">
+							<img src="images/volcano.jpg" alt="volcano" title="volcano" height="250" width="300">
+							<img src="images/volcano.jpg" alt="volcano" title="volcano" height="250" width="300">
+							<figcaption>Three Images Contain Volcano See The Full List <a href="#">Here</a></figcaption>
+	                    </figure>
+	        <!-- End Of Figure 2 -->
+					</section>
+				</article>
+
+			<!-- Start Of Video -->
+				<article>
+					<header>
+						<h3>Article About Using &lt;video&gt;</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>This Is Html5 Video</p>
+						<!-- All attributes like audio except poster="" -->
+						<video controls="" width="320" height="300" loop="" muted="" poster="images/volcano.jpg">
+							<source src="video/001.mp4"  type="video/mp4">
+							<source src="video/001.oog"  type="video/oog">
+							<source src="video/001.webm" type="video/webm">
+							<!-- #This For Translation and Used more By 
+								   monteer(montage)
+								 #.vtt==>video text track It is file type 
+								   for translation.
+								   for example:
+								   https://developer.mozilla.org/en-US/docs/Web/API/WebVTT_API#WebVTT_files
+								 #kind="subtitles" ==>For Translation
+								 #kind="caption"   ==>For Deaf(sound of cough)
+								 #kind="descriptions" ==>Description for the video
+								 #kind="chapters" ==>Navigate through the video
+								 #kind="metadata" ==>Informations about the video
+								 -->
+							<track kind="metadata" src="mahmoud.vtt" srclang="en"
+							label="en">
+							Your Browser Does Not Support Video Technology
+						</video>
+					</section>
+				</article>
+			<!-- End Of Video -->
+
+			<!-- Start New Form Input Types -->
+				<article>
+					<header>
+						<h3>Article About Using New Form Input Field</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03/01/2019</span></p>
+					</header>
+
+					<section>
+						<p>New Form Input Field</p>
+						<form class="html5">
+							<!-- Some Of This Inputs Not Supported In Some Browsers -->
+							<label>Color</label>
+				<!-- 01 --> <input type="color" name="theme" value="#0000FF"> 
+							<!-- I Can Use The Same Attrs. With Any Nurmecal Input Type (min, max, value, step)-->
+							<label>Range</label>
+				<!-- 02 -->	<input type="range" name="choose" min="0" max="100" value="1"
+				 			step="25">
+				 			<label>Number</label>
+				<!-- 03 -->	<input type="number" name="number" min="0" max="30" step="10">
+				 			<label>Email</label>
+			    <!-- 04 -->	<input type="email" name="email">
+				 			<label>Search</label>
+				<!-- 05 -->	<input type="search" name="search">
+				 			<label>Url</label>
+				<!-- 06 -->	<input type="url" name="link">
+				 			<label>Telephone</label>
+				<!-- 07 -->	<input type="tel" name="telephon">
+				 			<label>Time</label>
+				<!-- 08 -->	<input type="time" name="time">
+				 			<label>Datetime</label>
+				<!-- 09 -->	<input type="datetime-local" name="datetime">
+				 			<label>Date</label>
+				<!-- 10 -->	<input type="date" name="date">
+							<label>Month</label>
+			    <!-- 11 -->	<input type="month" name="month">
+			    			<label>Week</label>
+			    <!-- 12 --> <input type="week" name="week">
+							<input type="submit" value="Send">
+						</form>
+					</section>
+				</article>
+			<!-- End New Form Input Types -->
+
+			<!-- Start New Form Attributes -->
+				<article>
+					<header>
+						<h3>Article About Using New Form Attributes</h3>
+						<p>Created By <span>Mahmoud</span> On <span>03-01-2019</span></p>
+					</header>
+					<section>
+						<p>New Form Attributes</p>
+						<!-- #action refer to the file which data wil be sent to.
+							 #method==>"get" =>The sent data appear in the url bar.
+							        ==>"post"=>The sent data don't appear the url bar.
+							 #enctype refer to encoding type of data in the url bar that sent to server(back-end)
+							 #formaction, formmethod, formenctype avaliable only with input type submit&img but
+							  we can use js tricks to use them with other input types -->
+			<!-- 01 --><form id="main-form" class="html5" action="php/process.php" method="get" enctype="" novalidate>
+							<!-- At Html5 New Syntax I Can Write This Attributes AS Shown Below:
+								 # disabled="disabled" ===> disabled
+								 # required="required" ===> required-->
+ 			<!-- 02,10 -->	<input type="text" name="username" autofocus="on" placeholder="Enter Your Name">
+							<label>Email</label>
+							<!-- Multiple mean that I can enter more than one email with a comma(,)in between -->
+			<!-- 03,11 -->  <input type="email" name="email" autocomplete="off" multiple>
+							<!-- Use attr. multiple allow me to upload more than one file -->
+							<input type="file" multiple>
+							<input type="submit" value="Defaulet Submit">
+		    <!--04,05,06--> <input type="submit" value="Other Submit"formaction="php/other.php"
+							formmethod="post" formenctype="">
+							<!-- formnovalidate attr. override the defalult setting of the form(which is validate) -->
+			<!-- 08 -->		<input type="submit" formnovalidate value="Submit Without Validation">
+							<!-- We Can Use Other Values Of Target (_self, _parent, _top, framename) -->
+		    <!-- 09 -->		<input type="submit" formnovalidate formtarget="_blank" value="Submit In New Window">
+						</form>
+						<label>Nickname</label>
+						<!-- #Use attr. form="" to link data sent
+								from input field outside the form with data sent from the main form.. we use the 
+								main form id to establish this link. 
+							 #required attr. mean cant submit without filling this field.
+						-->
+		  <!-- 07,12 --><input type="text" name="nickname" form="main-form" required="">
+					</section>
+				</article>
+			<!-- Start New Form Attributes -->
+
+			</div>
+			<!-- End Articles -->
+
+
+			<!-- Start Sidebar -->
+			<aside>
+				<section class="links">
+					<h3>Categories</h3>
+					<ul>
+						<li>Intro</li>
+						<li>Semantics</li>
+						<li>Api</li>
+						<li>New Attributes</li>
+						<li>Multimedia Elelments</li>
+					</ul>
+				</section>
+
+			<!-- Start Meter -->
+				<section class="meters">
+					<h3>Performance</h3>
+					<div>Cpu :
+						<meter 
+							min      ="0" 
+							max      ="1" 
+							value    ="0.7"
+							low      ="0.5" 
+							high     ="0.9" 
+							optimum  ="0.8">
+					    </meter>
+					</div>
+				</section>
+			<!-- End Meter -->
+			<!-- Start Bdi -->
+				<section class="top-member">
+					<h3>Top Members</h3>
+					<ul>
+						<li>Mahmoud: 90 Point</li>
+						<li>Osama:  120 Point</li>
+						<li>Ahmed:   50 Point</li>
+						<!-- #bdi mean "be directional isolation"
+							 #Not Supported In Some Browsers -->
+						<li><bdi>على  </bdi>:   80 Point</li>
+					</ul>
+				</section>
+			<!-- End Bdi -->
+
+			<!-- Start Datalist -->
+				<!-- Difference between Datalist & select:
+					 #At datalist I can search through options 
+					 by letters  and I can Write
+					 #Can Use it instead of AJax in some cases-->
+				<section class="poll">
+					<h3>What Is Your Best Browser?</h3>
+					<form>
+						<input list="browsers">
+						<datalist id="browsers">
+							<option value="Chrome"></option>
+							<option value="Firefox"></option>
+							<option value="Safari"></option>
+							<option value="Opera"></option>
+							<option value="Internrt Explorer"></option>
+						</datalist>
+						<input type="submit" value="Choose">
+					</form>
+				</section>
+			<!-- End Datalist -->
+
+			<!-- Start Output -->
+				<section class="calculate-age">
+					<h3>Calculate Your Age In Days</h3>
+					<!-- This Is Jscript code -->
+					<form oninput="result.value = parseInt(age.value) * parseInt(days.value)+ ' Days'">
+						<input type="text" name="age" placeholder="Enter your age in years">
+						<input type="hidden" name="days" value="365">
+						<output name="result"></output>
+					</form>
+				</section>
+			<!-- End Output -->
+
+			<!-- Start Audio -->
+				<section>
+					<h3>Today's Audio</h3>
+						<!-- #Controls=""        ==>Audio Will Not Appear on The Browser Without It.
+						     #autoplay=""        ==>Not Supported In Google Chroome
+						     #src=""             ==>Can be Used Instead Of <source>
+						     #preload="auto"     ==>Auto load The Audio
+						     #preload="none"     ==>Don't Auto Load The Audio
+						     #preload="metadata" ==>Load Data About The Audio File -->
+					<audio controls="" autoplay="" loop="" muted="" preload="auto">
+						<!-- #Search MIME Types For Different Files
+						 	   Types https://www.sitepoint.com/mime-types-complete-list/ 
+							 #Write Different File and MIME Types For 
+							   The Same Audio File To Support 
+							   Different Browsers -->
+						<source src="audio/001.mp3" type="audio/mpeg">
+						<source src="audio/001.ogg" type="audio/ogg">
+						<!-- This Message Appear Only If The Browser Don't Support Audio -->
+						Your Browser Does Not Support Audio Technology
+					</audio>
+				</section>
+			<!-- End Audio -->
+			</aside>
+			<!-- End Sidebar -->
+
+			<div class="clearfix"></div>
+
+			<!-- Start Footer -->
+			<footer>
+				Copyrights 2019 &copy; All Rights Reserved
+			</footer>
+			<!-- End Footer -->
+
+
+			<!-- Videoes Of The Course -->
+			<h4>Videoes Of The Course:</h4>
+			===================
+			<br>
+			<a href="https://www.youtube.com/watch?v=vxA1WYpaDlo&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=8" 
+			target="_blank">[ Html5 In Arabic ] #08 - New Tags - Header, Nav, Article, Section, Footer</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=u_-uaAGeK50&index=9&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #09 - New Tags - Main, Aside</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=6kXLgk77eTw&index=10&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #10 - New Tags - Progress, Meter</a> <span>//</span>
+			<a href="https://codepen.io/pankajparashar/pen/GnFpA"
+			target="_blank">Discusses Different Meter Cases</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=xNxChPYEYNU&index=11&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #11 - New Tags - Details, Mark, Wbr</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=Jdb0Df-3ypA&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=12"
+			target="_blank">[ Html5 In Arabic ] #12 - New Tags - Figure, Figcaption</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=susxZRzFHsk&index=13&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #13 - New Tags - Time, Dialog, Bdi</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=xcKomd9wmH4&index=14&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #14 - New Form Elements - Datalist</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=mo91BrLo6wk&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=15"
+			target="_blank">[ Html5 In Arabic ] #15 - New Form Elements - Output</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=wO1h_bHeunE&index=16&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #16 - New Multimedia Elements - Audio</a> <span>//</span>
+			<a href="https://www.sitepoint.com/mime-types-complete-list/"
+			target="_blank">The Complete List of MIME Types</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=FPWkm-WyXRo&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=17"
+			target="_blank">[ Html5 In Arabic ] #17 - New Multimedia Elements - Video</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=74NgjSicQCg&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=18"
+			target="_blank">[ Html5 In Arabic ] #18 - Form Input - Color, Range, Number</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=SIKTk18Lu9A&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=19"
+			target="_blank">[ Html5 In Arabic ] #19 - Form Input - Email, Search, Url, Tel</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=3wsV58XyK9M&index=20&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #20 - Form Input - Time, Date, Month, Week</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=Kjgr242zYUs&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=21"
+			target="_blank">[ Html5 In Arabic ] #21 - Form Attributes - AutoComplete, AutoFocus, NoValidate</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=eeN7fc1MCtc&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=22"
+			target="_blank">[ Html5 In Arabic ] #22 - Form Attributes - Form [ Action, Method, EncType ]</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=r4aDMHwti3o&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ&index=23"
+			target="_blank">[ Html5 In Arabic ] #23 - Form Attributes - Form [ NoValidate, Target ]</a>
+
+			<br><br>
+
+			<a href="https://www.youtube.com/watch?v=Ind10xNUFEg&index=24&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			target="_blank">[ Html5 In Arabic ] #24 - Form Attributes - Multiple, Placeholder, Required</a>
+
+		</body>
+	</html>

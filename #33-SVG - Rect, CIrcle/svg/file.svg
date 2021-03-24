@@ -1,0 +1,16 @@
+			<!-- We Must Identefy The File By xmlns="http://www.w3.org/2000/svg" -->
+			<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+
+				<!-- Start rect -->
+				<rect width="100%" height="100%" fill="#AAA" x="0"  y="0"  rx="0" ry="0"/>
+				<rect width="50"   height="50"   fill="#F00" x="0"  y="0"  rx="0" ry="0"/>
+				<rect width="50"   height="50"   fill="#00F" x="10" y="10" rx="0" ry="0"/>
+				<rect width="50"   height="50"   fill="#0B0" x="20" y="20" rx="0" ry="0"/>
+				<!-- End rect -->
+
+
+				<!-- Start Circle -->
+				<circle r="20" cx="100" cy="100" fill="#000"/>
+				<!-- End Circle -->
+
+			</svg>

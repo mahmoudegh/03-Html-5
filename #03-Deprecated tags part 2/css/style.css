@@ -1,0 +1,9 @@
+/*9-<strike></strike>====>css{text-decoration:line-through}*/
+p.line-through{text-decoration: line-through}
+
+/*10-<tt></tt>====>css{font-family:monospace}*/
+p.monospace{font-family: monospace}
+
+
+/*My Framework*/
+p{display: inline}

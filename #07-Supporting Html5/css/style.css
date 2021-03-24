@@ -1,0 +1,10 @@
+/*1-New browsers deal with unknown elements as inline elements.*/
+
+/*#Old browsers deal with unknown elements as inline elements
+		but cant do any style to it by css.*/
+galal{background-color: red; color: #FFF}
+
+
+/*My Workframe*/
+
+p{line-height: 1.6;font-family: Arial,Tahoma}

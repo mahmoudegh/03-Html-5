@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>Support Html5</title>
+			<link rel="stylesheet" href="css/style.css">
+			<script src="js/script.js"></script>
+
+			<!--[if lt IE 9]>
+				<script src="html5shiv.min.js"></script>
+			<![endif]-->
+
+		</head>
+		<body>
+				<p>
+				1-New browsers deal with unknown elements as inline elements.
+				<br><br>
+				#Old browsers deal with unknown elements as inline elements
+				<br>but cant do any style to it by css.
+				<br><br>
+				#Old browsers deal with Html5 new elements as unknown.
+				<br><br>
+				#We can use js to creat new elements for old browsers
+				<br>===> document.creatElement("galal"); <===
+				<br><br>
+				#After we creat new elements(Html5 new elements) for old browsers
+				<br>They still deal with them as inline elements althoug they may be 
+				<br>block elements so we must use {display:block} by css.
+				<br><br>
+				#We cant do all this steps for each Html5 new element we use with old
+				<br>browsers SO we can include The HTML5 Shiv(this is a script) that 
+				<br>enables use of HTML5 new elements in old browsers and provides basic
+				<br>HTML5 styling for old browsers.
+				<br><br>
+				#We can Include the <a href="https://github.com/aFarkas/html5shiv"
+				 target="_blank">HTML5 shiv</a> in the <head> of your page in a conditional
+				<br>comment and after any stylesheets to use The HTML5 Shiv script only with 
+				<br>old browsers as IE 8, IE 7, IE 6, etc.(AS SHOWN ABOVE IN THE <head>)
+				</p>
+				<hr>							
+					
+
+			 <h1>#1</h1>
+			 <p>New Browsers</p>
+			 <galal>
+			 	<mahmoud>Hello Mahmoud</mahmoud>
+			 </galal>
+			 <hr>
+
+			 <h4>Video Of The Course</h4>
+			 <a href="https://www.youtube.com/watch?v=cX5wHCWjglI&index=7&list=PLDoPjvoNmBAyXCAQMLhDRZsLi_HurqTBZ"
+			 target="_blank">[ Html5 In Arabic ] #07 - Support Html5</a>
+
+		</body>
+	</html>
